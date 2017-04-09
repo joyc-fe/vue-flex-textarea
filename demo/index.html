@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
+    <script src="../dist/flex-textarea.js"></script>
+<style type="text/css">
+    .huifu{ font-size: 6rem ; width: 100%}
+</style>
+</head>
+<body>
+
+<flex-textarea rows="10" value="" placeholder="请输入内容" class="huifu" resized="resized"></flex-textarea>
+</body>
+
+<script>
+    new Vue({
+        el: 'body',
+        props: {
+        },
+        data(){
+        return {};
+    },
+    components: {
+        flexTextarea
+    },created(){
+
+    },methods:{
+        resized(){
+            console.log("初始化");
+        }
+    }
+    });
+
+</script>
+</html>
